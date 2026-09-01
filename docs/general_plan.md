@@ -9,6 +9,7 @@ General ideas:
 ## To Do:
 - Find similar examples (preferrably something that covers psychology) (Stanley Parable, Endacopia?, Omori, Yume Nikki) (oobja, ^_^, ) (Backroom) (Marble Hornets, weird birds, backroom, ) horror arg/analog horror, SCP wiki
 - Make ideas for two characters (wip..)
+- **Assets!!!**
 - ~~Copyright free bgm (at least one)~~ https://freetouse.com/music 
 - (https://freetouse.com/music/filo-starquez/crow's-quest)
 - ~~Decide on player character option (predecided character vs. player decides)~~
