@@ -32,6 +32,7 @@ document.addEventListener("click", () => {
     if(currentIndex >= story.length) {
         textEl.textContent = "The END";
         speakerEl.textContent = "Narrator";
+        return;
     }
     displayText(currentIndex);
 });
