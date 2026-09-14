@@ -13,6 +13,10 @@ General ideas:
 - ~~Copyright free bgm (at least one)~~ https://freetouse.com/music 
 - (https://freetouse.com/music/filo-starquez/crow's-quest)
 - ~~Decide on player character option (predecided character vs. player decides)~~
+- Make ideas for options/decisions
+- Menu and gameplay music (at least one of each)
+- Start menu
+
 
 ## (Criminal) Psychological Effects and Ideas I Enjoy:
 - Confirmation Bias
@@ -41,3 +45,8 @@ General ideas:
 # 참고
 - [ ] 아직 안 한 일
 - [x] 완료한 일
+
+# Inspo
+UI/UX: Danganronpa (Trials), Persona (Options)
+Gameplay mechanics: Red Dead Redemption (Honor system)
+Vibe: 
