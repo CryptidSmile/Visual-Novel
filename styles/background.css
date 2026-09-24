@@ -71,6 +71,20 @@ body{
 
 #dialogue-box{
     position: absolute;
-    background-color: red;
-    width:80%;
+    background-color: #0E1427;
+    height:30%;
+    width:85%;
+    bottom: 5vh;
+    left: 15vh;
+    padding:15px;
+    color: #86b6ea;
+    font-size:25px;
+}
+
+#speaker{
+    font-size:30px;
+    font-weight:bold;
+}
+#text{
+    margin-top: 10px;
 }
