@@ -8,11 +8,14 @@ const textEl = document.querySelector("#text");
 const diaBoxEl = document.querySelector("#dialogue-box");
 const startBtnEl = document.querySelector("#start-btn");
 const bgmEl = document.querySelector("#bg-music");
+const titleScrn = document.querySelector("#title-screen");
+const storyScrn = document.querySelector("#story-screen");
 
 // game start 버튼을 누르면 노래가 재생된다.
 startBtnEl.addEventListener("click", () => {
     bgmEl.play();
-    startBtnEl.style.display = "none";
+    titleScrn.hidden = true;
+    storyScrn.hidden = false;
 });
 
 // 2. 실제로 배열에 있는 내용으로 speaker, text를 교체 - function (parameter)

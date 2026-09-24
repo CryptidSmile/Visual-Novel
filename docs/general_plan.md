@@ -16,6 +16,7 @@ General ideas:
 - Make ideas for options/decisions
 - Menu and gameplay music (at least one of each)
 - Start menu
+- Background inconsistencies
 
 
 ## (Criminal) Psychological Effects and Ideas I Enjoy:
