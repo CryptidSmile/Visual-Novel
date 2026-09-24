@@ -11,7 +11,7 @@ body{
 #background{
     height: 100vh;
     width: 100%;
-    background-image: url(/assets/bg_images/Alleyway2.png);
+    background-image: url(../assets/bg_images/Alleyway2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
