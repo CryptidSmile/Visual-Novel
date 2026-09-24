@@ -71,22 +71,36 @@ body{
 
 #dialogue-box{
     position: absolute;
-    background-color: #0E1427;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 85%;
+    min-height: 25%;
+    padding: 22px 32px 28px;
+    box-sizing: border-box;
+
+    background-color: rgba(14, 20, 39, 0.88);
+    border: 2px solid #86b6ea;
+    border-radius: 6px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+
     font-family: 'Times New Roman', Times, serif;
-    height:30%;
-    width:85%;
-    bottom: 5vh;
-    left: 15vh;
-    padding:15px;
-    padding-left:20px;
-    color: #86b6ea;
-    font-size:25px;
+    font-size: 24px;
+    line-height: 1.55;
+    color: #d6e6f7;
 }
 
 #speaker{
-    font-size:30px;
-    font-weight:bold;
+    font-family: 'Special Elite', monospace;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #86b6ea;
+    margin-bottom: 10px;
 }
+
 #text{
-    margin-top: 10px;
+    font-family: 'Special Elite', monospace;
+    min-height: 1.55em;
 }
