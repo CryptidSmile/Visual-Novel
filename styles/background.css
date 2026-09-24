@@ -72,6 +72,7 @@ body{
 #dialogue-box{
     position: absolute;
     background-color: #0E1427;
+    font-family: 'Times New Roman', Times, serif;
     height:30%;
     width:85%;
     bottom: 5vh;
