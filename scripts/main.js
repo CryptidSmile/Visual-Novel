@@ -3,6 +3,8 @@
 // 1. document에서 speaker, text를 가져와야 텍스트를 바꿀수있겠지
 // id = speaker => element id로 가져오는거
 //뭘 바꿀건데?
+
+
 const speakerEl = document.querySelector("#speaker");
 const textEl = document.querySelector("#text");
 const diaBoxEl = document.querySelector("#dialogue-box");
@@ -10,6 +12,20 @@ const startBtnEl = document.querySelector("#start-btn");
 const bgmEl = document.querySelector("#bg-music");
 const titleScrn = document.querySelector("#title-screen");
 const storyScrn = document.querySelector("#story-screen");
+const gameScrn = document.querySelector("#game-screen");
+const modalScrn = document.querySelector("#modal-screen");
+const overlay = document.querySelector("#overlay");
+
+//game 도중 esc 버튼 누르면 모달(세팅)창이 뜨게 만들기
+document.addEventListener("keydown", (e) => {
+    console.log("keydown here");
+    if(e.key === "Escape") {
+        overlay.hidden = false;
+    }
+    
+});
+
+
 
 // game start 버튼을 누르면 노래가 재생된다.
 startBtnEl.addEventListener("click", () => {
