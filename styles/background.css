@@ -30,6 +30,12 @@ body{
     width: 600px;
     top: 33%;
     left: 12%;
+    animation: moonFloat 6s ease-in-out infinite;
+}
+
+@keyframes moonFloat {
+    0%, 100% { transform: translateY(0); filter: drop-shadow(0 0 20px rgba(140, 150, 220, 0.3)); }
+    50%      { transform: translateY(-12px); filter: drop-shadow(0 0 35px rgba(140, 150, 220, 0.55)); }
 }
 
 #story-screen{
@@ -82,6 +88,7 @@ body{
     width: 400px;
     top: 78%;
     left: 15%;
+    animation: 1s ease-in-out infinite btnAnimation alternate;
 }
 
 #cloud2-png{
@@ -90,6 +97,7 @@ body{
     width: 600px;
     top: 65%;
     left: 28%;
+    animation: 1s 0.7s ease-in-out infinite btnAnimation alternate;
 }
 
 #title-png{
