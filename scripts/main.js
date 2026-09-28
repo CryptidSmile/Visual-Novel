@@ -15,6 +15,7 @@ const storyScrn = document.querySelector("#story-screen");
 const gameScrn = document.querySelector("#game-screen");
 const modalScrn = document.querySelector("#modal-screen");
 const overlay = document.querySelector("#overlay");
+const titleBgm = document.querySelector("#title-music");
 
 //game 도중 esc 버튼 누르면 모달(세팅)창이 뜨게 만들기
 document.addEventListener("keydown", (e) => {
@@ -25,7 +26,9 @@ document.addEventListener("keydown", (e) => {
     
 });
 
-
+window.onload = function() {
+    titleBgm.autoplay = true;
+}
 
 // game start 버튼을 누르면 노래가 재생된다.
 startBtnEl.addEventListener("click", () => {

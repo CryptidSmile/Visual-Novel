@@ -24,6 +24,14 @@ body{
     background-color: #0E1427;
 }
 
+#moon-png{
+    position: absolute;
+    height: auto;
+    width: 600px;
+    top: 33%;
+    left: 12%;
+}
+
 #story-screen{
     position: relative;
     height: 100vh;
@@ -35,6 +43,20 @@ body{
     width: 300px;
     top: 35vh;
     left: 80vh;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+/* transform: translate(-50%, -50%); */
+#start-btn:hover{
+    filter: hue-rotate(60deg);
+    animation: 0.5s ease-in-out infinite btnAnimation alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btnAnimation{
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-3px);}
 }
 
 #load-btn{
@@ -53,12 +75,21 @@ body{
     left: 100vh;
 }
 
-#moon-png{
+
+#cloud1-png{
     position: absolute;
     height: auto;
-    width: 900px;
-    top: 20vh;
-    left: 25vh;
+    width: 400px;
+    top: 78%;
+    left: 15%;
+}
+
+#cloud2-png{
+    position: absolute;
+    height: auto;
+    width: 600px;
+    top: 65%;
+    left: 28%;
 }
 
 #title-png{
@@ -132,3 +163,4 @@ body{
 .menu-btn {
     width: 100px;
 }
+
