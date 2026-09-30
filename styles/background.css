@@ -173,3 +173,38 @@ body{
     width: 100px;
 }
 
+
+/* ---- 커튼 (시작 전 화면) ---- */
+#curtain{
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.curtain-left, .curtain-right{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg, #5a0f14 0 40px, #7a1a20 40px 80px);
+    transition: transform 1.5s ease-in-out;
+}
+.curtain-left { left: 0; }
+.curtain-right{ right: 0; }
+
+#curtain.open .curtain-left { transform: translateX(-100%); }
+#curtain.open .curtain-right{ transform: translateX(100%); }
+
+#curtain-text{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin: 0;
+    text-align: center;
+    color: #f3e6c8;
+    font-family: "Special Elite", monospace;
+    font-size: 32px;
+    transition: opacity 0.3s;
+}
+#curtain.open #curtain-text{ opacity: 0; }

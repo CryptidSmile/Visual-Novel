@@ -26,12 +26,19 @@ document.addEventListener("keydown", (e) => {
     
 });
 
-window.onload = function() {
-    titleBgm.autoplay = true;
-}
+// 커튼을 클릭하면 좌우로 열리고 타이틀 음악 재생
+// (브라우저는 사용자가 한 번 클릭하기 전엔 소리를 막기 때문에 이 클릭이 필요하다)
+const curtainEl = document.querySelector("#curtain");
+curtainEl.addEventListener("click", (e) => {
+    e.stopPropagation(); // 이 클릭이 대사 넘기기로 세어지지 않게
+    curtainEl.classList.add("open");
+    titleBgm.play();
+    setTimeout(() => { curtainEl.hidden = true; }, 1500); // 다 열리면 치우기 (CSS 1.5s와 맞춤)
+});
 
 // game start 버튼을 누르면 노래가 재생된다.
 startBtnEl.addEventListener("click", () => {
+    titleBgm.pause();
     bgmEl.play();
     titleScrn.hidden = true;
     storyScrn.hidden = false;
