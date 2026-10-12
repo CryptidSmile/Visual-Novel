@@ -1,5 +1,6 @@
 // Stores the story data
 
+
 const scenes = {
   prologue:{
     bg: "black",
@@ -16,7 +17,7 @@ const scenes = {
       {speaker: "Narrator", text: "Briefing Text"},
       {speaker: "Player", text: "Player Text"},
     ],
-    next: "interrogation",
+    next: "office",
   },
 
   office:{
@@ -24,13 +25,13 @@ const scenes = {
     lines: [
       {speaker: "Narrator", text: "Office Text"},
       {speaker: "Player", text: "Player Text"},
-      { type: "get", id: "D00", name: "Evidence 0 - ??" },
+      { type: "get", id: "D00", name: "Evidence 0 - ??" }, 
       {
         type: "choice",
         prompt: "first 분기점 질문",
-        options: [
-          { text: "answer1", next: "???", set: { tod_narrow: true } },
-          { text: "answer2", next: "???", set: { dna_rush: true } },
+        options: [ 
+          { text: "부검을 더 자세히해보자", next: "???", set: { tod_narrow: true } },
+          { text: "dna 검사 요청했다.", next: "???", set: { dna_rush: true } },
           { text: "answer3", next: "???", set: { trust: +1 } },
         ],
       },
@@ -38,6 +39,7 @@ const scenes = {
     next: "???",
   }
 }
+
 
 const story = [
   { speaker: "Narrator", text: "Once upon a time, in a land far away" },

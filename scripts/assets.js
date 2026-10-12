@@ -6,6 +6,8 @@
 
   const backgroundEl = "???"; // background element selector (수정 필요)
 
+
   function showBackground(name) {
     // background image 보여주는 로직 필요
+
   }
