@@ -7,6 +7,8 @@ const scenes = {
     lines: [
       {speaker: "Narrator", text: "Narrator Text"},
       {speaker: "Player", text: "Player Text"},
+      {speaker: "Player 2", text: "Hi, I'm player 2"},
+      {speaker: "Player", text: "Hello player 2"}
     ],
     next: "briefing",
   },

@@ -6,6 +6,7 @@ body{
     position: relative;
     height:100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 #background{
@@ -175,13 +176,12 @@ body{
 
 
 /* ---- 커튼 (시작 전 화면) ---- */
-#curtain{
+ #curtain{
     position: absolute;
     inset: 0;
     z-index: 100;
     cursor: pointer;
 }
-
 .curtain-left, .curtain-right{
     position: absolute;
     top: 0;

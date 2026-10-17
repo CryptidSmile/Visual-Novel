@@ -17,8 +17,8 @@ const modalScrn = document.querySelector("#modal-screen");
 const overlay = document.querySelector("#overlay");
 const titleBgm = document.querySelector("#title-music");
 
-let currentScene = ("prologue")
-let currentIndex = [0]
+let currentScene;
+let currentIndex;
 
 // scenes -> prologue 를 가져와야하는데 key를 문자열로 줄지, 오브젝트를 처음부터 넘겨줄지? 
 
@@ -41,39 +41,41 @@ curtainEl.addEventListener("click", (e) => {
     setTimeout(() => { curtainEl.hidden = true; }, 1500); // 다 열리면 치우기 (CSS 1.5s와 맞춤)
 });
 
-
-function displayText(index) {
-    // 내가필요한 프롤로그 오브젝트 가져오기
-    
-    // 
-    const line = scenes.prologue.lines[index];
-    speakerEl.textContent = line.speaker;
-    textEl.textContent = line.text;
-
-};
-
 function goToScene(name){
     currentScene = name;
     currentIndex = 0;
     // 텍스트 디스플레이 해줘
-    displayText(currentIndex);
+    showLine();
 }
 
 // game start 버튼을 누르면 노래가 재생된다.
 startBtnEl.addEventListener("click", () => {
     titleBgm.pause();
-    bgmEl.play();
+    bgmEl.pause();
     titleScrn.hidden = true;
     storyScrn.hidden = false;
     goToScene("prologue");
 });
 
 
+function showLine() {
+    const line = scenes[currentScene].lines[currentIndex];
+    speakerEl.textContent = line.speaker;
+    textEl.textContent = line.text;
+};
 
-document.addEventListener("click", () => {
-    // scenes에서 대사가져오기
-    // display text를 이용해서 대사 출력하기
-    let currentIndex = +1
-    displayText();
+function nextLine(){
+    ++currentIndex;
+    const myScene = scenes[currentScene];
+    if (myScene.lines.length === currentIndex){
+        goToScene(myScene.next);
+    }
+}
+
+
+
+storyScrn.addEventListener("click", () => {
+    nextLine();
+    showLine();
 });
 
