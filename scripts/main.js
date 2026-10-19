@@ -16,6 +16,8 @@ const gameScrn = document.querySelector("#game-screen");
 const modalScrn = document.querySelector("#modal-screen");
 const overlay = document.querySelector("#overlay");
 const titleBgm = document.querySelector("#title-music");
+const muteBtn = document.querySelector("#mute-btn");
+
 
 let currentScene;
 let currentIndex;
@@ -51,7 +53,7 @@ function goToScene(name){
 // game start 버튼을 누르면 노래가 재생된다.
 startBtnEl.addEventListener("click", () => {
     titleBgm.pause();
-    bgmEl.pause();
+    bgmEl.play();
     titleScrn.hidden = true;
     storyScrn.hidden = false;
     goToScene("prologue");
@@ -72,7 +74,16 @@ function nextLine(){
     }
 }
 
-
+muteBtn.addEventListener("click", () => {
+    //오디오태그를 다 가져와서 뮤트 해버림
+    const audios = document.querySelectorAll("audio"); // NodeList .forEach
+    audios.forEach((audio) => {
+        audio.muted = !audio.muted
+        if ( audio.muted == true)
+        {muteBtn.textContent = "Unmute"}
+        else {muteBtn.textContent = "Mute"}
+    });
+});
 
 storyScrn.addEventListener("click", () => {
     nextLine();
