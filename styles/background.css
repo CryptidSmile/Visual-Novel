@@ -228,3 +228,18 @@ body{
 #mute-btn:hover {
     background: rgba(0, 0, 0, 0.8);
 }
+
+#character {
+    position: absolute;
+    width: 2500px;
+    height: 4000px;
+    translate: 0px -550px;
+}
+
+#boris {
+    position: absolute;
+    height: 300px;
+    width: auto;
+    transform: scaleX(-1);
+    translate: 300px, 150px;
+}

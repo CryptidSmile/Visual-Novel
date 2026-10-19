@@ -5,10 +5,15 @@ const scenes = {
   prologue:{
     bg: "black",
     lines: [
-      {speaker: "Narrator", text: "Narrator Text"},
-      {speaker: "Player", text: "Player Text"},
-      {speaker: "Player 2", text: "Hi, I'm player 2"},
-      {speaker: "Player", text: "Hello player 2"}
+      {speaker: "Narrator", text: "You’ve finally graduated from your boring apprentice status after X long years. It was a grueling experience, but you are now a full fledged detective of Riverbank."},
+      {speaker: "Narrator", text: "For your final test, you will be let loose on a real criminal case alone. Your mentor will be there for help, but he will not solve the case for you."},
+      {speaker: "Narrator", text: "Justice depends on you now, detective. Good luck."},
+      {speaker: "Player", text: "The sun is an insult to your eyes as you walk to the Riverbank police station, your heart hammering at the thought of your first solo case."},
+      {speaker: "Player", text: "No longer will the gilded cage of your apprenticeship hold you back, but the freedom outside won’t provide for you either."},
+      {speaker: "Player", text: "Boris waits in the briefing room of the station — your mentor since the start of it all."},
+      {speaker: "Boris", text: "Hey kid. Ready for your first ever case? I’ve got a good one picked out just for you."},
+      {speaker: "Player", text: "Boris slides you a cream colored case file and a legal document."},
+      {speaker: "Boris", text: "You’ll have to sign that document before we start though. Legal spiel that boils down to you agreeing to the terms required to begin officially working here."},
     ],
     next: "briefing",
   },

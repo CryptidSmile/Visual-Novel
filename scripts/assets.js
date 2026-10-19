@@ -11,3 +11,13 @@
     // background image 보여주는 로직 필요
 
   }
+
+  const CHARACTERSTILLS = {
+
+  };
+
+  const charEl = document.querySelector("#character");
+  const borisStill = new Image(100,200);
+  borisStill.id = "boris";
+  borisStill.src = "assets/character_stills/Char1.png";
+  charEl.append(borisStill);
