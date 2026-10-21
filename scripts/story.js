@@ -21,39 +21,26 @@ const scenes = {
   briefing:{
     bg: "building",
     lines: [
-      {speaker: "Narrator", text: "Briefing Text"},
-      {speaker: "Player", text: "Player Text"},
-    ],
-    next: "office",
-  },
-
-  office:{
-    bg: "office",
-    lines: [
-      {speaker: "Narrator", text: "Office Text"},
-      {speaker: "Player", text: "Player Text"},
-      { type: "get", id: "D00", name: "Evidence 0 - ??" }, 
+      {speaker: "Boris", text: "Alright, let’s get started kid. Come on in, Hilda."},
+      {speaker: "Narrator", text: "A CSI agent joins you and Boris in the office, holding a cream colored case file in her hands. She hands you the file."},
+      {speaker: "Hilda", text: "It’s a suspected murder case. Victim was Casey Paludosus, age 26. His body was found in the alleyway behind the Crab Barrel Bar on Pearlweed Avenue, near the intersection with Frogbit Lane. Multiple external and internal wounds."},
+      {speaker: "Hilda", text: "This file contains all the evidence we’ve gathered from the scene, as well as a list of suspects and individuals close to the victim."},
+      {speaker: "Boris", text: "Thank you, dear."},
+      {speaker: "Hilda", text: "Don’t call me ‘dear,’ Boris."},
+      {speaker: "Boris", text: "Grouchy as usual, I see."},
+      {speaker: "Boris", text: "Anyways, as Ms. Virilis so kindly briefed you — this is a likely murder case. Everything you’ll need you can find in that folder, and you can log any new findings in your notebook."},
+      {speaker: "Boris", text: "Give it a look and you can pick where you want to start your investigation. I personally suggest you start with the autopsy report before you interrogate anyone though."},
       {
         type: "choice",
-        prompt: "first 분기점 질문",
-        options: [ 
-          { text: "부검을 더 자세히해보자", next: "???", set: { tod_narrow: true } },
-          { text: "dna 검사 요청했다.", next: "???", set: { dna_rush: true } },
-          { text: "answer3", next: "???", set: { trust: +1 } },
-        ],
-      },
+        prompt: "What do you want to do first?",
+        options: [
+          {text:"Review autopsy report", next:""},
+          {text:"Review photos from the scene", next:""},
+          {text:"Review witness report log", next:""},
+          {text:"Speak with witnesses", next:""},
+          {text:"Speak with suspects", next:""},
+        ]
+      }
     ],
-    next: "???",
-  }
+  },
 }
-
-
-const story = [
-  { speaker: "Narrator", text: "Once upon a time, in a land far away" },
-  { speaker: "Narrator", text: "There lived a detective in a crime riddled city called Crimopolis"},
-  { speaker:"Player", text:"This person has been arrested on suspicions of a crime. How do I get the truth out of them?" },
-  { speaker:"Narrator", text:"What will you do?" },
-  { speaker: "Player", text: "How did you know the victim?" },
-  { speaker: "Suspect", text: "They were my next door neighbor, and we occasionally ran into each other in the neighborhood." },
-  { speaker: "Player", text: "Are you sure that's all you knew them by?" },
-];
