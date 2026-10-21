@@ -1,0 +1,35 @@
+#dialogue-box{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 85%;
+    min-height: 25%;
+    padding: 22px 32px 28px;
+    box-sizing: border-box;
+
+    background-color: rgba(14, 20, 39, 0.88);
+    border: 2px solid #86b6ea;
+    border-radius: 6px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.55;
+    color: #d6e6f7;
+}
+
+#speaker{
+    font-family: 'Special Elite', monospace;
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #86b6ea;
+    margin-bottom: 10px;
+}
+
+#text{
+    font-family: 'Special Elite', monospace;
+    min-height: 1.55em;
+}

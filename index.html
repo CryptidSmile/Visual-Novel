@@ -6,7 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/background.css"></link>
+    <link rel="stylesheet" href="styles/base.css"></link>
+    <link rel="stylesheet" href="styles/title.css"></link>
+    <link rel="stylesheet" href="styles/story.css"></link>
+    <link rel="stylesheet" href="styles/ui.css"></link>
+    <link rel="stylesheet" href="styles/dialoguebox.css"></link>
 </head>
 <body>
     <div id="game-screen">
@@ -30,7 +34,11 @@
         </div>
         <div id="story-screen" hidden>
             <div id="background"></div>
-            <div id="character"></div>
+            <div id="character">
+                <img class="character-head" id="charSpot1" src="assets/character_stills/Char1.png">
+                <img class="character-head" id="charSpot2" src="assets/character_stills/Char1.png">
+                <img class="character-head" id="charSpot3" src="assets/character_stills/Char1.png">
+            </div>
             <div id="dialogue-box">
                 <div id="speaker"></div>
                 <div id="text"></div>            

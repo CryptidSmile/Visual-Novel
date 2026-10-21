@@ -12,7 +12,7 @@ const scenes = {
       {speaker: "Player", text: "No longer will the gilded cage of your apprenticeship hold you back, but the freedom outside won’t provide for you either."},
       {speaker: "Player", text: "Boris waits in the briefing room of the station — your mentor since the start of it all."},
       {speaker: "Boris", text: "Hey kid. Ready for your first ever case? I’ve got a good one picked out just for you."},
-      {speaker: "Player", text: "Boris slides you a cream colored case file and a legal document."},
+      {speaker: "Player", text: "Boris slides you a legal document."},
       {speaker: "Boris", text: "You’ll have to sign that document before we start though. Legal spiel that boils down to you agreeing to the terms required to begin officially working here."},
     ],
     next: "briefing",
