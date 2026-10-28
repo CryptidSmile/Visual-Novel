@@ -18,11 +18,41 @@ const overlay = document.querySelector("#overlay");
 const titleBgm = document.querySelector("#title-music");
 const muteBtn = document.querySelector("#mute-btn");
 
+const winHeight = window.innerHeight;
+const winWidth = window.innerWidth;
+
+
+
+const HEIGHT = 1080;
+const WIDTH = 1920;
 
 let currentScene;
 let currentIndex;
 
 // scenes -> prologue 를 가져와야하는데 key를 문자열로 줄지, 오브젝트를 처음부터 넘겨줄지? 
+
+function fitScreen(){
+    console.log("resized!")
+    // 1920 1080 , user A: w, h ;
+    //vw/gw = A
+    //vh/gh = B
+    //if A > B = gh*B
+    //else = gw*A
+
+    const widthBy = winWidth / WIDTH;
+    const heightBy = winHeight / HEIGHT;
+    const smallerValue = Math.min(widthBy, heightBy);
+
+    // window. -> 
+    // 1. 곱해야하는 숫자를 구해야하지.
+    // 2. window WIDTH / gamescreen WIDTH = A , window HEIGHT / gamescreen HEIGHT = B
+    // 3. A 와 B중 작은 값을 쓴다. min(A,B)
+    // 4. transform: .... translate 주고, scale 주고 
+    gameScrn.style.transform = `translate(-50%, -50%) scale(${smallerValue})`;
+}
+
+window.addEventListener("resize", fitScreen);
+fitScreen();
 
 //game 도중 esc 버튼 누르면 모달(세팅)창이 뜨게 만들기
 document.addEventListener("keydown", (e) => {

@@ -1,6 +1,6 @@
 #background{
-    height: 100vh;
-    width: 100%;
+    height: 90vh;
+    width: 100vw;
     background-image: url(../assets/bg_images/Alleyway2.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 #character {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     translate: 0px -100vh;
 }
 
@@ -26,13 +26,13 @@
 }
 
 #charSpot1{
-    transform: scaleX(-1) translate(-10vw, 40vh);
+    transform: scaleX(-1) translate(-150px, 360px);
 }
 
 #charSpot2{
-    transform: translate(50vw, 40vh);
+    transform: translate(1000px, 360px);
 }
 
 #charSpot3{
-    transform: translate(15vw, 40vh);
+    transform: translate(300px, 360px);
 }
