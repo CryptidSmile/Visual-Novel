@@ -17,6 +17,7 @@
     width: 100vw;
     height: 90vh;
     translate: 0px -100vh;
+    pointer-events: none;
 }
 
 .character-head {

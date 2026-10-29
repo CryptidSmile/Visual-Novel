@@ -45,6 +45,7 @@
     top: 33%;
     left: 12%;
     animation: moonFloat 6s ease-in-out infinite;
+    pointer-events: none;
 }
 
 @keyframes moonFloat {
@@ -95,6 +96,7 @@
     top: 78%;
     left: 15%;
     animation: 1s ease-in-out infinite btnAnimation alternate;
+    pointer-events: none;
 }
 
 #cloud2-png{
@@ -104,6 +106,7 @@
     top: 65%;
     left: 28%;
     animation: 1s 0.7s ease-in-out infinite btnAnimation alternate;
+    pointer-events: none;
 }
 
 #title-png{
@@ -112,4 +115,5 @@
     width: 900px;
     top: 10vh;
     left: 26vh;
+    pointer-events: none;
 }
