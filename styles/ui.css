@@ -13,8 +13,8 @@
 #modal-screen{
     position: absolute;
     height: 200px;
-    top: 50vh;
-    left: 50vh;
+    top: 50%;
+    left: 50%;
     width: auto;
 }
 

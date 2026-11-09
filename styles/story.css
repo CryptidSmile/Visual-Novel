@@ -1,22 +1,24 @@
+#story-screen{
+    position: relative;
+    height: 100%;
+}
+
 #background{
-    height: 90vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     background-image: url(../assets/bg_images/Alleyway2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-#story-screen{
-    position: relative;
-    height: 100vh;
-}
 
 #character {
     position: absolute;
-    width: 100vw;
-    height: 90vh;
-    translate: 0px -100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
 }
 
@@ -27,13 +29,13 @@
 }
 
 #charSpot1{
-    transform: scaleX(-1) translate(-150px, 360px);
+    transform: scaleX(-1) translate(-150px, 400px);
 }
 
 #charSpot2{
-    transform: translate(1000px, 360px);
+    transform: translate(1000px, 400px);
 }
 
 #charSpot3{
-    transform: translate(300px, 360px);
+    transform: translate(300px, 400px);
 }
