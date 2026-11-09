@@ -6,7 +6,8 @@
 #background{
     height: 100%;
     width: 100%;
-    background-image: url(../assets/bg_images/Alleyway2.png);
+    background-color: black;
+    /* background-image: url(../assets/bg_images/Alleyway2.png); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

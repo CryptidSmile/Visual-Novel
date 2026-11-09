@@ -1,5 +1,9 @@
 // Stores the story data
 
+// 1. scene 에 맞는 배경 에셋
+// 2. story.js에서 bg:부분을 실제 코드와 연결해서, scene마다 자동으로 배경이 바뀌도록
+// 3. choice, 화면에 선택지 띄워서 다른 곳으로 넘어가는 것까지 되는지 확인 
+
 
 const scenes = {
   prologue:{
